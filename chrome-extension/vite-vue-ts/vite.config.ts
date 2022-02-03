@@ -19,12 +19,12 @@ export default defineConfig({
         /**
          * 点击插件图标出现的弹窗
          */
-        popup: resolve(__dirname, 'src/popup/index.html'),
-        background: resolve(__dirname, 'src/background/main.ts')
+        'popup/index': resolve(__dirname, 'src/popup/index.html'),
+        background: resolve(__dirname, 'src/background.ts')
       },
       output: {
         chunkFileNames: 'assets/js/[name].js',
-        entryFileNames: '[name]/index.js',
+        entryFileNames: '[name].js',
         assetFileNames: 'assets/[ext]/[name].[ext]'
       }
     }
