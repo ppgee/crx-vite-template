@@ -20,7 +20,7 @@ export default defineConfig({
          * 点击插件图标出现的弹窗
          */
         'popup/index': resolve(__dirname, 'src/popup/index.html'),
-        background: resolve(__dirname, 'src/background.ts')
+        background: resolve(__dirname, 'src/core/background.ts')
       },
       output: {
         chunkFileNames: 'assets/js/[name].js',
